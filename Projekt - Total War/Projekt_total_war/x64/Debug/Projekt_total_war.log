@@ -1,0 +1,12 @@
+﻿  Unit.cpp
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(47,32): warning C4244: "argument": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(227,63): warning C4244: "argument": konwersja z "float" do "sf::Int32", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(359,21): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(360,22): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(412,19): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(413,19): warning C4244: "inicjowanie": konwersja z "int" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(602,3): warning C4267: "inicjowanie": konwersja z "size_t" do "int", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(780,23): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(805,24): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+C:\Users\krzys\source\repos\projekt_pk4_total_war\Projekt_total_war\Resources\Unit.cpp(821,22): warning C4244: "=": konwersja z "double" do "float", możliwa utrata danych
+  Projekt_total_war.vcxproj -> C:\Users\krzys\source\repos\projekt_pk4_total_war\x64\Debug\Projekt_total_war.exe
