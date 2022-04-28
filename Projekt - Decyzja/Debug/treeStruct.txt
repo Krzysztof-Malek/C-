@@ -1,0 +1,6 @@
+0 wzrost>190.3 1 3
+1 wyskok<50.0 5 2
+2 wiek<18 4 pelnoletni
+3 szybkosc>20.7 4 biegi
+4 skok_w_dal>2 biegi skoki
+5 skok_wzwyz<2 schodki biegi

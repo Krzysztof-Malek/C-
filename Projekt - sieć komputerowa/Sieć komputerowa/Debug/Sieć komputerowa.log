@@ -1,0 +1,13 @@
+﻿  functions.cpp
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(172,13): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(221,21): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(228,22): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(235,14): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(238,14): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(245,14): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(253,14): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(260,14): warning C4018: "<": niezgodność typu ze znakiem/bez znaku
+  main.cpp
+  Generowanie kodu...
+C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\functions.cpp(72): warning C4715: "checkArguments”: niewszystkie ścieżki kodu zwracają wartość
+  Sieć komputerowa.vcxproj -> C:\Users\krzys\source\repos\Krzysztof-Malek\PK3\Projekt\Sieć komputerowa\Debug\Sieć komputerowa.exe

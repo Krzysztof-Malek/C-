@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sieć komputerowa: Dokumentacja pliku functions.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sieć komputerowa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku functions.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstring&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;set&gt;</code><br />
+<code>#include &quot;<a class="el" href="structs_8h_source.html">structs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="functions_8h_source.html">functions.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla functions.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="functions_8cpp__incl.png" border="0" usemap="#functions_8cpp" alt=""/></div>
+<map name="functions_8cpp" id="functions_8cpp">
+<area shape="rect" title=" " alt="" coords="319,5,418,32"/>
+<area shape="rect" title=" " alt="" coords="618,155,690,181"/>
+<area shape="rect" title=" " alt="" coords="27,80,86,107"/>
+<area shape="rect" title=" " alt="" coords="110,80,171,107"/>
+<area shape="rect" title=" " alt="" coords="196,80,261,107"/>
+<area shape="rect" title=" " alt="" coords="286,80,355,107"/>
+<area shape="rect" title=" " alt="" coords="175,155,231,181"/>
+<area shape="rect" title=" " alt="" coords="478,80,552,107"/>
+<area shape="rect" title=" " alt="" coords="576,80,616,107"/>
+<area shape="rect" href="structs_8h.html" title=" " alt="" coords="380,80,453,107"/>
+<area shape="rect" href="functions_8h.html" title=" " alt="" coords="691,80,776,107"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:aa51ef250b77880a2fab629bbb98dc9d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#aa51ef250b77880a2fab629bbb98dc9d7">checkArguments</a> (int argc, char **&amp;argv, std::string &amp;coorName, std::string &amp;tabName, std::string &amp;outName)</td></tr>
+<tr class="separator:aa51ef250b77880a2fab629bbb98dc9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4912dd721cf939278b65b99582000b9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a4912dd721cf939278b65b99582000b9c">readCoorName</a> (const std::string &amp;coorName, <a class="el" href="structcoor_list.html">coorList</a> *&amp;head)</td></tr>
+<tr class="separator:a4912dd721cf939278b65b99582000b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae238521e0561de62ee11f357a92ec0f6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ae238521e0561de62ee11f357a92ec0f6">addToCoorList</a> (<a class="el" href="structcoor_list.html">coorList</a> *&amp;head, int _index, std::string _surname, int _v, int _w)</td></tr>
+<tr class="separator:ae238521e0561de62ee11f357a92ec0f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d39a5b63410cc497ff16db6932deb6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a89d39a5b63410cc497ff16db6932deb6">readTabName</a> (const std::string &amp;tabName, std::vector&lt; std::pair&lt; int, int &gt;&gt; &amp;tabVector)</td></tr>
+<tr class="separator:a89d39a5b63410cc497ff16db6932deb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b14670683191d48428fc349d6c4970f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a1b14670683191d48428fc349d6c4970f">addToTabVector</a> (std::vector&lt; std::pair&lt; int, int &gt;&gt; &amp;tabVector, int _x, int _y)</td></tr>
+<tr class="separator:a1b14670683191d48428fc349d6c4970f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a81e68b9690599969c7e6f30e496ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ad4a81e68b9690599969c7e6f30e496ac">fillQueque</a> (std::vector&lt; std::pair&lt; int, std::pair&lt; int, int &gt; &gt; &gt; &amp;Q, <a class="el" href="structcoor_list.html">coorList</a> *cHead, std::vector&lt; std::pair&lt; int, int &gt;&gt; tabVector)</td></tr>
+<tr class="separator:ad4a81e68b9690599969c7e6f30e496ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac880618841d490cd8d0f14c6b1e1f9a8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#ac880618841d490cd8d0f14c6b1e1f9a8">howFar</a> (<a class="el" href="classcoordinates.html">coordinates</a> *mainElement, <a class="el" href="classcoordinates.html">coordinates</a> *secondaryElement)</td></tr>
+<tr class="separator:ac880618841d490cd8d0f14c6b1e1f9a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1861e6a710581cf6f2f90681eea26698"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a1861e6a710581cf6f2f90681eea26698">makeTheWeeb</a> (std::vector&lt; std::set&lt; int &gt; &gt; &amp;sets, std::vector&lt; std::pair&lt; int, std::pair&lt; int, int &gt; &gt; &gt; &amp;Q, const std::string &amp;outName)</td></tr>
+<tr class="separator:a1861e6a710581cf6f2f90681eea26698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a015dbd3928d4211070611e3eb8964915"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="functions_8cpp.html#a015dbd3928d4211070611e3eb8964915">eraseList</a> (<a class="el" href="structcoor_list.html">coorList</a> *cHead)</td></tr>
+<tr class="separator:a015dbd3928d4211070611e3eb8964915"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="ae238521e0561de62ee11f357a92ec0f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae238521e0561de62ee11f357a92ec0f6">&#9670;&nbsp;</a></span>addToCoorList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addToCoorList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcoor_list.html">coorList</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>_surname</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_w</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja tworząca obiekt coordinates i dodajaca go do listy </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">head</td><td>głowa listy </td></tr>
+    <tr><td class="paramname">_index</td><td>dana index do utworzenia obiektu </td></tr>
+    <tr><td class="paramname">_surname</td><td>nazwisko </td></tr>
+    <tr><td class="paramname">_v</td><td>wpółrzędna v </td></tr>
+    <tr><td class="paramname">_w</td><td>współrzędna w </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a1b14670683191d48428fc349d6c4970f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b14670683191d48428fc349d6c4970f">&#9670;&nbsp;</a></span>addToTabVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void addToTabVector </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, int &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>tabVector</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja dodająca element do vectora z niemożliwymi połączeniami </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabVector</td><td>vector par intów </td></tr>
+    <tr><td class="paramname">_x</td><td>mieszkanie 1 </td></tr>
+    <tr><td class="paramname">_y</td><td>mieszkanie 2 </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aa51ef250b77880a2fab629bbb98dc9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa51ef250b77880a2fab629bbb98dc9d7">&#9670;&nbsp;</a></span>checkArguments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int checkArguments </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&amp;&#160;</td>
+          <td class="paramname"><em>argv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>coorName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>tabName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>outName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja sprawdza argumenty podane w konsoli przy uruchomieniu programu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>ilość wyrazów pobrana z konsoli </td></tr>
+    <tr><td class="paramname">argv</td><td>wyrazy pobrane z konsoli </td></tr>
+    <tr><td class="paramname">coorName</td><td>nazwa pliku ze współrzędnymi </td></tr>
+    <tr><td class="paramname">tabName</td><td>nazwa pliku z niemożliwymi połączeniami </td></tr>
+    <tr><td class="paramname">outName</td><td>nazwa pliku wyjściowego </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a015dbd3928d4211070611e3eb8964915"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a015dbd3928d4211070611e3eb8964915">&#9670;&nbsp;</a></span>eraseList()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void eraseList </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structcoor_list.html">coorList</a> *&#160;</td>
+          <td class="paramname"><em>cHead</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja zwalniająca pamięć z listy wskażników na obiekty </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cHead</td><td>wskażnik na kolejne elementy listy </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ad4a81e68b9690599969c7e6f30e496ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4a81e68b9690599969c7e6f30e496ac">&#9670;&nbsp;</a></span>fillQueque()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fillQueque </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, std::pair&lt; int, int &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcoor_list.html">coorList</a> *&#160;</td>
+          <td class="paramname"><em>cHead</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, int &gt;&gt;&#160;</td>
+          <td class="paramname"><em>tabVector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja zapełniająca i sortująca kolejkę Q wykorzystywaną przez algorytm kruskala </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Q</td><td>vector par int par intów reprezentujący odległość i mieszkania między którymi możemy zrobić połączenie </td></tr>
+    <tr><td class="paramname">cHead</td><td>głowa listy na kolejne obiekty coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ac880618841d490cd8d0f14c6b1e1f9a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac880618841d490cd8d0f14c6b1e1f9a8">&#9670;&nbsp;</a></span>howFar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int howFar </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classcoordinates.html">coordinates</a> *&#160;</td>
+          <td class="paramname"><em>mainElement</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcoordinates.html">coordinates</a> *&#160;</td>
+          <td class="paramname"><em>secondaryElement</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja licząca odległość między mieszkaniami idąc po prostych </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mainElement</td><td>wskażnik na obiekt 1 mieszkania </td></tr>
+    <tr><td class="paramname">secondaryElement</td><td>wskażnik na obiekt 2 mieszkania </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>int </dd></dl>
+
+</div>
+</div>
+<a id="a1861e6a710581cf6f2f90681eea26698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1861e6a710581cf6f2f90681eea26698">&#9670;&nbsp;</a></span>makeTheWeeb()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void makeTheWeeb </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; std::set&lt; int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sets</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, std::pair&lt; int, int &gt; &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>Q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>outName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja wpisująca do pliku kolejne połączenia między mieszkaniami wraz z sumaryczną długością kabli przy każdym nowym połączeniu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">sets</td><td>vector zbiorów mieszkań dzięki którym eliminujemy pętle </td></tr>
+    <tr><td class="paramname">Q</td><td>vector par int par intów reprezentujący odległość i mieszkania między którymi możemy zrobić połączenie </td></tr>
+    <tr><td class="paramname">outName</td><td>nazwa pliku wyjściowego </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a4912dd721cf939278b65b99582000b9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4912dd721cf939278b65b99582000b9c">&#9670;&nbsp;</a></span>readCoorName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readCoorName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>coorName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structcoor_list.html">coorList</a> *&amp;&#160;</td>
+          <td class="paramname"><em>head</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Funkcja wczytująca plik ze współrzędnymi do listy </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">coorName</td><td>nazwa pliku </td></tr>
+    <tr><td class="paramname">head</td><td>głowa listy na współrzędne mieszkańców (początkowo nullptr) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a89d39a5b63410cc497ff16db6932deb6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89d39a5b63410cc497ff16db6932deb6">&#9670;&nbsp;</a></span>readTabName()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void readTabName </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>tabName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, int &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>tabVector</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Fubnkcja wczytująca plik z niemożliwymi połączeniami wpisująca je do vectora par intów i sortująca go malejąca </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">tabName</td><td>nazwa pliku z niemożliwymi połączeniami </td></tr>
+    <tr><td class="paramname">tabVector</td><td>vector z parą intów niemożliwych do połączenia mieszkań </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>void </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

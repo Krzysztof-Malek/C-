@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Sieć komputerowa: Plik źródłowy structs.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Sieć komputerowa
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">structs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="structs_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef _STRUCTS_H_</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define _STRUCTS_H_</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//Classes</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classinhabitants.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classinhabitants.html">inhabitants</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> index;              </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    std::string surname;    </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classinhabitants.html">inhabitants</a>() :index(0), surname(<span class="stringliteral">&quot;x&quot;</span>) {}    </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classinhabitants.html">inhabitants</a>(<span class="keywordtype">int</span> _index, std::string _surname) :index(_index), surname(_surname) {} </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    ~<a class="code" href="classinhabitants.html">inhabitants</a>() {}   </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classcoordinates.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcoordinates.html">coordinates</a> :<span class="keyword">public</span> <a class="code" href="classinhabitants.html">inhabitants</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">int</span> v, w;           </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classcoordinates.html">coordinates</a>() :v(0), w(0), <a class="code" href="classinhabitants.html">inhabitants</a>() {} </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classcoordinates.html">coordinates</a>(<span class="keywordtype">int</span> _v, <span class="keywordtype">int</span> _w, <span class="keywordtype">int</span> _index, std::string _surname) :v(_v), w(_w), <a class="code" href="classinhabitants.html">inhabitants</a>(_index, _surname) {}   </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ~<a class="code" href="classcoordinates.html">coordinates</a>() {}       </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classcoordinates.html#a288c38ac6c5e0f1e1db97c9b35cb4c83">   30</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classcoordinates.html#a288c38ac6c5e0f1e1db97c9b35cb4c83">sendV</a>() {   </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordflow">return</span> v;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classcoordinates.html#a6eb77bfb08259ae5406161d400a76de2">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classcoordinates.html#a6eb77bfb08259ae5406161d400a76de2">sendW</a>() {   </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">return</span> w;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//Structures</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="structcoor_list.html">   42</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structcoor_list.html">coorList</a> {</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="structcoor_list.html#a016651e3f367ba8dd9e537a68e994ebb">   43</a></span>&#160;    <a class="code" href="classcoordinates.html">coordinates</a>* <a class="code" href="structcoor_list.html#a016651e3f367ba8dd9e537a68e994ebb">coords</a>;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="structcoor_list.html#a5e8c236a0334da6e2178122d55cc6688">   44</a></span>&#160;    <a class="code" href="structcoor_list.html">coorList</a>* <a class="code" href="structcoor_list.html#a5e8c236a0334da6e2178122d55cc6688">next</a>;         </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//Functions</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassinhabitants_html"><div class="ttname"><a href="classinhabitants.html">inhabitants</a></div><div class="ttdef"><b>Definition:</b> structs.h:11</div></div>
+<div class="ttc" id="astructcoor_list_html_a016651e3f367ba8dd9e537a68e994ebb"><div class="ttname"><a href="structcoor_list.html#a016651e3f367ba8dd9e537a68e994ebb">coorList::coords</a></div><div class="ttdeci">coordinates * coords</div><div class="ttdoc">wskażnik na obiekt coordinations</div><div class="ttdef"><b>Definition:</b> structs.h:43</div></div>
+<div class="ttc" id="aclasscoordinates_html_a288c38ac6c5e0f1e1db97c9b35cb4c83"><div class="ttname"><a href="classcoordinates.html#a288c38ac6c5e0f1e1db97c9b35cb4c83">coordinates::sendV</a></div><div class="ttdeci">int sendV()</div><div class="ttdef"><b>Definition:</b> structs.h:30</div></div>
+<div class="ttc" id="astructcoor_list_html_a5e8c236a0334da6e2178122d55cc6688"><div class="ttname"><a href="structcoor_list.html#a5e8c236a0334da6e2178122d55cc6688">coorList::next</a></div><div class="ttdeci">coorList * next</div><div class="ttdoc">wskażnik na następny element listy</div><div class="ttdef"><b>Definition:</b> structs.h:44</div></div>
+<div class="ttc" id="aclasscoordinates_html"><div class="ttname"><a href="classcoordinates.html">coordinates</a></div><div class="ttdef"><b>Definition:</b> structs.h:22</div></div>
+<div class="ttc" id="aclasscoordinates_html_a6eb77bfb08259ae5406161d400a76de2"><div class="ttname"><a href="classcoordinates.html#a6eb77bfb08259ae5406161d400a76de2">coordinates::sendW</a></div><div class="ttdeci">int sendW()</div><div class="ttdef"><b>Definition:</b> structs.h:34</div></div>
+<div class="ttc" id="astructcoor_list_html"><div class="ttname"><a href="structcoor_list.html">coorList</a></div><div class="ttdef"><b>Definition:</b> structs.h:42</div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

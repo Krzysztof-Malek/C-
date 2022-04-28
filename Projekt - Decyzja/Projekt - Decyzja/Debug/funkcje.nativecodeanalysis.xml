@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DEFECTS>
+  <DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\krzys\source\repos\polsl-aei-ppk\cd61626d-gr71-repo\projekt\Projekt - Decyzja\Projekt - Decyzja\</FILEPATH>
+      <FILENAME>funkcje.cpp</FILENAME>
+      <LINE>240</LINE>
+      <COLUMN>33</COLUMN>
+    </SFA>
+    <DEFECTCODE>26451</DEFECTCODE>
+    <DESCRIPTION>Przepełnienie arytmetyczne: użycie operatora „*” dla wartości bajtowej 4, a następnie rzutowanie wyniku na wartość bajtową 8. Rzutuj wartość na szerszy typ przed wywołaniem operatora „*” w celu uniknięcia przepełnienia (io.2).</DESCRIPTION>
+    <FUNCTION>wypisz</FUNCTION>
+    <DECORATED>?wypisz@@YAXPAUtree@@H@Z</DECORATED>
+    <FUNCLINE>235</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT>
+</DEFECTS>

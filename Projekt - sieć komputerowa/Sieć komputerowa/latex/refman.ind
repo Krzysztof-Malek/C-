@@ -1,0 +1,86 @@
+\begin{theindex}
+
+  \item {addToCoorList}
+    \subitem {functions.cpp}, \hyperpage{12}
+    \subitem {functions.h}, \hyperpage{16}
+  \item {addToTabVector}
+    \subitem {functions.cpp}, \hyperpage{12}
+    \subitem {functions.h}, \hyperpage{17}
+
+  \indexspace
+
+  \item {checkArguments}
+    \subitem {functions.cpp}, \hyperpage{12}
+    \subitem {functions.h}, \hyperpage{17}
+  \item {coordinates}, \hyperpage{7}
+    \subitem {sendV}, \hyperpage{8}
+    \subitem {sendW}, \hyperpage{8}
+  \item {coorList}, \hyperpage{8}
+
+  \indexspace
+
+  \item {eraseList}
+    \subitem {functions.cpp}, \hyperpage{13}
+    \subitem {functions.h}, \hyperpage{18}
+
+  \indexspace
+
+  \item {fillQueque}
+    \subitem {functions.cpp}, \hyperpage{13}
+    \subitem {functions.h}, \hyperpage{18}
+  \item {functions.cpp}, \hyperpage{11}
+    \subitem {addToCoorList}, \hyperpage{12}
+    \subitem {addToTabVector}, \hyperpage{12}
+    \subitem {checkArguments}, \hyperpage{12}
+    \subitem {eraseList}, \hyperpage{13}
+    \subitem {fillQueque}, \hyperpage{13}
+    \subitem {howFar}, \hyperpage{14}
+    \subitem {makeTheWeeb}, \hyperpage{14}
+    \subitem {readCoorName}, \hyperpage{15}
+    \subitem {readTabName}, \hyperpage{15}
+  \item {functions.h}, \hyperpage{15}
+    \subitem {addToCoorList}, \hyperpage{16}
+    \subitem {addToTabVector}, \hyperpage{17}
+    \subitem {checkArguments}, \hyperpage{17}
+    \subitem {eraseList}, \hyperpage{18}
+    \subitem {fillQueque}, \hyperpage{18}
+    \subitem {howFar}, \hyperpage{19}
+    \subitem {makeTheWeeb}, \hyperpage{19}
+    \subitem {readCoorName}, \hyperpage{20}
+    \subitem {readTabName}, \hyperpage{20}
+
+  \indexspace
+
+  \item {howFar}
+    \subitem {functions.cpp}, \hyperpage{14}
+    \subitem {functions.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {inhabitants}, \hyperpage{9}
+
+  \indexspace
+
+  \item {main.cpp}, \hyperpage{20}
+  \item {makeTheWeeb}
+    \subitem {functions.cpp}, \hyperpage{14}
+    \subitem {functions.h}, \hyperpage{19}
+
+  \indexspace
+
+  \item {readCoorName}
+    \subitem {functions.cpp}, \hyperpage{15}
+    \subitem {functions.h}, \hyperpage{20}
+  \item {readTabName}
+    \subitem {functions.cpp}, \hyperpage{15}
+    \subitem {functions.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {sendV}
+    \subitem {coordinates}, \hyperpage{8}
+  \item {sendW}
+    \subitem {coordinates}, \hyperpage{8}
+  \item {structs.h}, \hyperpage{21}
+
+\end{theindex}

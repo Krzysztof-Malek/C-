@@ -1,0 +1,202 @@
+\hypertarget{functions_8cpp}{}\doxysection{Dokumentacja pliku functions.\+cpp}
+\label{functions_8cpp}\index{functions.cpp@{functions.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstring$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$set$>$}\newline
+{\ttfamily \#include \char`\"{}structs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}functions.\+h\char`\"{}}\newline
+Wykres zależności załączania dla functions.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{functions_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{functions_8cpp_aa51ef250b77880a2fab629bbb98dc9d7}{check\+Arguments}} (int argc, char $\ast$$\ast$\&argv, std\+::string \&coor\+Name, std\+::string \&tab\+Name, std\+::string \&out\+Name)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a4912dd721cf939278b65b99582000b9c}{read\+Coor\+Name}} (const std\+::string \&coor\+Name, \mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$\&head)
+\item 
+void \mbox{\hyperlink{functions_8cpp_ae238521e0561de62ee11f357a92ec0f6}{add\+To\+Coor\+List}} (\mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$\&head, int \+\_\+index, std\+::string \+\_\+surname, int \+\_\+v, int \+\_\+w)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a89d39a5b63410cc497ff16db6932deb6}{read\+Tab\+Name}} (const std\+::string \&tab\+Name, std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&tab\+Vector)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a1b14670683191d48428fc349d6c4970f}{add\+To\+Tab\+Vector}} (std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&tab\+Vector, int \+\_\+x, int \+\_\+y)
+\item 
+void \mbox{\hyperlink{functions_8cpp_ad4a81e68b9690599969c7e6f30e496ac}{fill\+Queque}} (std\+::vector$<$ std\+::pair$<$ int, std\+::pair$<$ int, int $>$ $>$ $>$ \&Q, \mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$c\+Head, std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ tab\+Vector)
+\item 
+int \mbox{\hyperlink{functions_8cpp_ac880618841d490cd8d0f14c6b1e1f9a8}{how\+Far}} (\mbox{\hyperlink{classcoordinates}{coordinates}} $\ast$main\+Element, \mbox{\hyperlink{classcoordinates}{coordinates}} $\ast$secondary\+Element)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a1861e6a710581cf6f2f90681eea26698}{make\+The\+Weeb}} (std\+::vector$<$ std\+::set$<$ int $>$ $>$ \&sets, std\+::vector$<$ std\+::pair$<$ int, std\+::pair$<$ int, int $>$ $>$ $>$ \&Q, const std\+::string \&out\+Name)
+\item 
+void \mbox{\hyperlink{functions_8cpp_a015dbd3928d4211070611e3eb8964915}{erase\+List}} (\mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$c\+Head)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{functions_8cpp_ae238521e0561de62ee11f357a92ec0f6}\label{functions_8cpp_ae238521e0561de62ee11f357a92ec0f6}} 
+\index{functions.cpp@{functions.cpp}!addToCoorList@{addToCoorList}}
+\index{addToCoorList@{addToCoorList}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{addToCoorList()}{addToCoorList()}}
+{\footnotesize\ttfamily void add\+To\+Coor\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$\&}]{head,  }\item[{int}]{\+\_\+index,  }\item[{std\+::string}]{\+\_\+surname,  }\item[{int}]{\+\_\+v,  }\item[{int}]{\+\_\+w }\end{DoxyParamCaption})}
+
+Funkcja tworząca obiekt coordinates i dodajaca go do listy 
+\begin{DoxyParams}{Parametry}
+{\em head} & głowa listy \\
+\hline
+{\em \+\_\+index} & dana index do utworzenia obiektu \\
+\hline
+{\em \+\_\+surname} & nazwisko \\
+\hline
+{\em \+\_\+v} & wpółrzędna v \\
+\hline
+{\em \+\_\+w} & współrzędna w \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a1b14670683191d48428fc349d6c4970f}\label{functions_8cpp_a1b14670683191d48428fc349d6c4970f}} 
+\index{functions.cpp@{functions.cpp}!addToTabVector@{addToTabVector}}
+\index{addToTabVector@{addToTabVector}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{addToTabVector()}{addToTabVector()}}
+{\footnotesize\ttfamily void add\+To\+Tab\+Vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&}]{tab\+Vector,  }\item[{int}]{\+\_\+x,  }\item[{int}]{\+\_\+y }\end{DoxyParamCaption})}
+
+Funkcja dodająca element do vectora z niemożliwymi połączeniami 
+\begin{DoxyParams}{Parametry}
+{\em tab\+Vector} & vector par intów \\
+\hline
+{\em \+\_\+x} & mieszkanie 1 \\
+\hline
+{\em \+\_\+y} & mieszkanie 2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_aa51ef250b77880a2fab629bbb98dc9d7}\label{functions_8cpp_aa51ef250b77880a2fab629bbb98dc9d7}} 
+\index{functions.cpp@{functions.cpp}!checkArguments@{checkArguments}}
+\index{checkArguments@{checkArguments}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{checkArguments()}{checkArguments()}}
+{\footnotesize\ttfamily int check\+Arguments (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$\&}]{argv,  }\item[{std\+::string \&}]{coor\+Name,  }\item[{std\+::string \&}]{tab\+Name,  }\item[{std\+::string \&}]{out\+Name }\end{DoxyParamCaption})}
+
+Funkcja sprawdza argumenty podane w konsoli przy uruchomieniu programu 
+\begin{DoxyParams}{Parametry}
+{\em argc} & ilość wyrazów pobrana z konsoli \\
+\hline
+{\em argv} & wyrazy pobrane z konsoli \\
+\hline
+{\em coor\+Name} & nazwa pliku ze współrzędnymi \\
+\hline
+{\em tab\+Name} & nazwa pliku z niemożliwymi połączeniami \\
+\hline
+{\em out\+Name} & nazwa pliku wyjściowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a015dbd3928d4211070611e3eb8964915}\label{functions_8cpp_a015dbd3928d4211070611e3eb8964915}} 
+\index{functions.cpp@{functions.cpp}!eraseList@{eraseList}}
+\index{eraseList@{eraseList}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{eraseList()}{eraseList()}}
+{\footnotesize\ttfamily void erase\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$}]{c\+Head }\end{DoxyParamCaption})}
+
+Funkcja zwalniająca pamięć z listy wskażników na obiekty 
+\begin{DoxyParams}{Parametry}
+{\em c\+Head} & wskażnik na kolejne elementy listy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_ad4a81e68b9690599969c7e6f30e496ac}\label{functions_8cpp_ad4a81e68b9690599969c7e6f30e496ac}} 
+\index{functions.cpp@{functions.cpp}!fillQueque@{fillQueque}}
+\index{fillQueque@{fillQueque}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{fillQueque()}{fillQueque()}}
+{\footnotesize\ttfamily void fill\+Queque (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::pair$<$ int, std\+::pair$<$ int, int $>$ $>$ $>$ \&}]{Q,  }\item[{\mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$}]{c\+Head,  }\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$$>$}]{tab\+Vector }\end{DoxyParamCaption})}
+
+Funkcja zapełniająca i sortująca kolejkę Q wykorzystywaną przez algorytm kruskala 
+\begin{DoxyParams}{Parametry}
+{\em Q} & vector par int par intów reprezentujący odległość i mieszkania między którymi możemy zrobić połączenie \\
+\hline
+{\em c\+Head} & głowa listy na kolejne obiekty coordinates \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_ac880618841d490cd8d0f14c6b1e1f9a8}\label{functions_8cpp_ac880618841d490cd8d0f14c6b1e1f9a8}} 
+\index{functions.cpp@{functions.cpp}!howFar@{howFar}}
+\index{howFar@{howFar}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{howFar()}{howFar()}}
+{\footnotesize\ttfamily int how\+Far (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcoordinates}{coordinates}} $\ast$}]{main\+Element,  }\item[{\mbox{\hyperlink{classcoordinates}{coordinates}} $\ast$}]{secondary\+Element }\end{DoxyParamCaption})}
+
+Funkcja licząca odległość między mieszkaniami idąc po prostych 
+\begin{DoxyParams}{Parametry}
+{\em main\+Element} & wskażnik na obiekt 1 mieszkania \\
+\hline
+{\em secondary\+Element} & wskażnik na obiekt 2 mieszkania \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a1861e6a710581cf6f2f90681eea26698}\label{functions_8cpp_a1861e6a710581cf6f2f90681eea26698}} 
+\index{functions.cpp@{functions.cpp}!makeTheWeeb@{makeTheWeeb}}
+\index{makeTheWeeb@{makeTheWeeb}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{makeTheWeeb()}{makeTheWeeb()}}
+{\footnotesize\ttfamily void make\+The\+Weeb (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::set$<$ int $>$ $>$ \&}]{sets,  }\item[{std\+::vector$<$ std\+::pair$<$ int, std\+::pair$<$ int, int $>$ $>$ $>$ \&}]{Q,  }\item[{const std\+::string \&}]{out\+Name }\end{DoxyParamCaption})}
+
+Funkcja wpisująca do pliku kolejne połączenia między mieszkaniami wraz z sumaryczną długością kabli przy każdym nowym połączeniu 
+\begin{DoxyParams}{Parametry}
+{\em sets} & vector zbiorów mieszkań dzięki którym eliminujemy pętle \\
+\hline
+{\em Q} & vector par int par intów reprezentujący odległość i mieszkania między którymi możemy zrobić połączenie \\
+\hline
+{\em out\+Name} & nazwa pliku wyjściowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a4912dd721cf939278b65b99582000b9c}\label{functions_8cpp_a4912dd721cf939278b65b99582000b9c}} 
+\index{functions.cpp@{functions.cpp}!readCoorName@{readCoorName}}
+\index{readCoorName@{readCoorName}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{readCoorName()}{readCoorName()}}
+{\footnotesize\ttfamily void read\+Coor\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{coor\+Name,  }\item[{\mbox{\hyperlink{structcoor_list}{coor\+List}} $\ast$\&}]{head }\end{DoxyParamCaption})}
+
+Funkcja wczytująca plik ze współrzędnymi do listy 
+\begin{DoxyParams}{Parametry}
+{\em coor\+Name} & nazwa pliku \\
+\hline
+{\em head} & głowa listy na współrzędne mieszkańców (początkowo nullptr) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{functions_8cpp_a89d39a5b63410cc497ff16db6932deb6}\label{functions_8cpp_a89d39a5b63410cc497ff16db6932deb6}} 
+\index{functions.cpp@{functions.cpp}!readTabName@{readTabName}}
+\index{readTabName@{readTabName}!functions.cpp@{functions.cpp}}
+\doxysubsubsection{\texorpdfstring{readTabName()}{readTabName()}}
+{\footnotesize\ttfamily void read\+Tab\+Name (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{tab\+Name,  }\item[{std\+::vector$<$ std\+::pair$<$ int, int $>$$>$ \&}]{tab\+Vector }\end{DoxyParamCaption})}
+
+Fubnkcja wczytująca plik z niemożliwymi połączeniami wpisująca je do vectora par intów i sortująca go malejąca 
+\begin{DoxyParams}{Parametry}
+{\em tab\+Name} & nazwa pliku z niemożliwymi połączeniami \\
+\hline
+{\em tab\+Vector} & vector z parą intów niemożliwych do połączenia mieszkań \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+void 
+\end{DoxyReturn}
